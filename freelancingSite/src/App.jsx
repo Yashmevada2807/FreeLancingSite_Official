@@ -50,7 +50,7 @@ function App() {
         {/* Scroll Section */}
         <div className="relative w-full ">
 
-          {/* Left Button with framer motion */}
+          {/* Left Button */}
           <motion.button
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
@@ -67,7 +67,6 @@ function App() {
             ref={scrollRef}
             className="w-full overflow-x-auto whitespace-nowrap scroll-smooth scrollbar-hide border rounded-lg px-2"
           >
-            {/* Motion wrapper for cards row */}
             <motion.div
               className="flex gap-4 py-6 min-w-fit"
               initial={{ opacity: 0, y: 45 }}
@@ -82,7 +81,7 @@ function App() {
             </motion.div>
           </div>
 
-          {/* Right Button with framer motion */}
+          {/* Right Button */}
           <motion.button
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
