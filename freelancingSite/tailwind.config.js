@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        opensans: ['Open+Sans', 'sans-serif'],
+        poppins:['Poppins'],
+        
+      }
+    },
   },
   plugins: [require('tailwind-scrollbar-hide')],
 }
