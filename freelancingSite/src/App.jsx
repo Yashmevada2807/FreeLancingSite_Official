@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import DemoCard from './components/DemoCard'
 import { motion } from 'framer-motion'
 import { Card } from './components/Card'
+import { Hero } from './components/Hero'
 
 function App() {
   const scrollRef = useRef(null)
@@ -35,7 +36,12 @@ function App() {
 
   return (
     <>
-      <div className="w-full min-h-screen bg-gray-100 text-black  flex flex-col items-center px-4">
+      <div className="w-full min-h-screen bg-gray-100 text-black  flex flex-col items-center px-4 font-inter">
+
+
+        <Hero/>
+
+
         {/* Header */}
         {/* <div className="w-fit flex items-center justify-center max-w-7xl py-6">
           <div className="bg-white/10 backdrop-blur-md z-10 flex flex-wrap justify-center sm:justify-between items-center gap-4 rounded-lg shadow-lg border  p-4">
@@ -49,6 +55,10 @@ function App() {
         </div> */}
 
         {/* Scroll Section */}
+
+
+
+
         <div className="relative w-full ">
 
           {/* Left Button */}
